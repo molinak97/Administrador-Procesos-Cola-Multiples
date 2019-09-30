@@ -107,13 +107,13 @@ namespace SimuladorProcesos
 
         private void refernciaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("TANENBAUM Andrew (Pagina: 84)", "Sistemas Operativos");
+            MessageBox.Show("TANENBAUM Andrew (Pagina: 87)", "Sistemas Operativos");
         }
 
         private void reseñaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show(
-            "A cada proceso se le asigna un intervalo de tiempo, llmadado cuanto, durante el cual se le permite ejecutarse. Si el proceso todavia se esta ejecutando al expirar su cuanto, el sistema operativo se apropia del la CPU naturalmente se efectua cuando el proceso se boquea. El round robin es facil de implementar.", "Algoritmo RR");
+            "Por ejemplo, consideramos un proceso que necesita calcular continuamente durante 100 cuantos; inicialmente, se le daría un cuanto, y luego se intercambiaría por otro proceso. La siguiente vez, recibiría dos cuantos antes de ser intercambiado. En ocasiones subsecuentes obtendría 4,8,46,32 y 64 cuantos, aunque sólo usaría 37 de los últimos 64 cuantos para completar su trabajo. Sólo se necesitarían 7 intercambios (incluida la carga de inicial) en lugar de 100 si se usara un algoritmo round cada vez con menor frecuencia, guardando la CPU para procesos interactivos cortos.", "Algoritmo Colas Multiples");
         }
     }
 }

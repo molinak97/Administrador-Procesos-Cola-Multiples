@@ -28,7 +28,6 @@ namespace SimuladorProcesos
             while (true)
             {
                 bool executionFinished = true;
-                quantum++;
                 //Loop through all processes until the loop ends
                 foreach (var proceso in procesos)
                 {
@@ -88,8 +87,9 @@ namespace SimuladorProcesos
                         ioExecution(procesos, proceso.Id, proceso.IO);
                         proceso.IO = proceso.IO - 1;
                     }
+                    
                 }
-
+                quantum = quantum * 2;
                 //When All Processes have completed their execution
                 if (executionFinished == true)
                 {
